@@ -1,7 +1,7 @@
 {
     "name": "hr.mocha",
     "description": "Utility to run mocha unit tests for HappyRhino",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "devDependencies": {
         "mocha-phantomjs": "3.5.3",
         "mocha": "2.2.1",
