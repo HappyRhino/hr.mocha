@@ -30,8 +30,9 @@ async.series([
     }
 ], function(err, cmd) {
     var log = cmd[1];
-    process.stdout.write(cmd[0].toString());
-    process.stderr.write(cmd[1].toString());
+
+    if (cmd[0]) process.stdout.write(cmd[0].toString());
+    if (cmd[1]) process.stderr.write(cmd[1].toString());
     process.exit(err? 1 : 0);
 });
 
